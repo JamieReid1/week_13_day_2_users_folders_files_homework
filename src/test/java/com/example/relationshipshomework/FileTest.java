@@ -1,6 +1,8 @@
 package com.example.relationshipshomework;
 
 import com.example.relationshipshomework.models.File;
+import com.example.relationshipshomework.models.Folder;
+import com.example.relationshipshomework.models.User;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,11 +11,15 @@ import static org.junit.Assert.assertEquals;
 public class FileTest {
 
     File file;
+    Folder folder;
+    User user;
 
     @Before
     public void before(){
 
-        file = new File("Doc", "txt", 200);
+        user = new User("Dave");
+        folder = new Folder("Project", user);
+        file = new File("Doc", "txt", 200, folder);
 
     }
 

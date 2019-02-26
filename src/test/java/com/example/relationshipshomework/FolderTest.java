@@ -10,11 +10,13 @@ import static org.junit.Assert.assertEquals;
 public class FolderTest {
 
     Folder folder;
+    User user;
 
     @Before
     public void before(){
 
-        folder =  new Folder("Project");
+        user = new User("Dave");
+        folder =  new Folder("Project", user);
 
     }
 
