@@ -27,5 +27,5 @@ public class UserTest {
         user.setName("David");
         assertEquals("David", user.getName());
     }
-    
+
 }
